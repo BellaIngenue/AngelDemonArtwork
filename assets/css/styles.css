@@ -1,5 +1,5 @@
 /*=============== GOOGLE FONTS ===============*/
-@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&family=Give+You+Glory&family=Macondo&family=Pacifico&family=Patrick+Hand&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap')
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&family=Give+You+Glory&family=Macondo&family=Pacifico&family=Patrick+Hand&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
 
 
 /*=============== VARIABLES CSS ===============*/
@@ -8,14 +8,17 @@
   --first-color: hsl(30, 16%, 50%);
   --text-color: #fff;
   --text-color-black: hsl(30, 8%, 15%);
-  --body-color: hsl(30, 100%, 98%);
+  --body-color: #f2dfce;
+  --swiper-navigation-color: #BF5065;
 
   /*========== Font and typography ==========*/
-  font-family: "Comfortaa", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: <weight>;
-  font-style: normal;
+  --body-font: 'Comfortaa', sans-serif;
+  --h3-font-size: 1rem;
+  --small-font-size: .813rem;
+  --smaller-font-size: .75rem;
 }
+
+
 
 /* Responsive typography */
 @media screen and (min-width: 1024px) {
@@ -33,6 +36,49 @@
   margin: 0;
 }
 
+.logo {
+    width: 100px;
+    margin-top: -10px;
+    display: flex;
+    justify-content: center;
+}
+
+.nav {
+  display: flex;
+  justify-content: center;
+  padding: 0px 0;
+  font-family: 'Pacifico';
+  font-size: 25px;
+  border-bottom: 8px solid #bf5065;
+}
+
+a{
+  display: relative;
+  text-decoration: none;
+  color: #bf5065;
+}
+
+a:hover {
+  color: #734954;
+}
+
+ul{
+  display: flex;
+}
+
+li {
+  list-style-type: none;
+  padding: 10px;
+}
+
+.footer{
+  display: flex;
+  justify-content: center;
+  padding: 30px 0;
+  width: 100%;
+  color: #734954;
+}
+
 body {
   font-family: var(--body-font);
   background-color: var(--body-color);
@@ -41,10 +87,6 @@ body {
 img {
   max-width: 100%;
   height: auto;
-    
-footer {
-        
-    }
 }
 
 /*=============== GALLERY ===============*/
@@ -55,29 +97,29 @@ footer {
   justify-content: center;
 }
 
-.gallery_card {
+.gallery__card {
   position: relative;
-  width: 208px;
-  height: 208px;
+  width: 268px;
+  height: 268px;
   border-radius: 3rem;
   margin-left: auto;
   margin-right: auto;
   overflow: hidden;
 }
 
-.gallery_img, 
-.gallery_card::after, 
-.gallery_data {
+.gallery__img, 
+.gallery__card::after, 
+.gallery__data {
   position: absolute;
 }
 
-.gallery_img {
+.gallery__img {
   inset: 0;
   margin: auto;
   transition: transform .3s;
 }
 
-.gallery_card::after {
+.gallery__card::after {
   content: '';
   width: 100%;
   height: 100%;
@@ -88,31 +130,31 @@ footer {
   z-index: 1;
 }
 
-.gallery_data {
+.gallery__data {
   bottom: 1.5rem;
   left: 1.75rem;
   z-index: 10;
 }
 
-.gallery_title, 
-.gallery_subtitle {
+.gallery__title, 
+.gallery__subtitle {
   color: var(--text-color);
   font-weight: 500;
 }
 
-.gallery_title {
+.gallery__title {
   font-size: var(--h3-font-size);
 }
 
-.gallery_subtitle {
+.gallery__subtitle {
   font-size: var(--smaller-font-size);
 }
 
-.gallery_overflow {
+.gallery__overflow {
   position: relative;
 }
 
-.gallery_thumbnail {
+.gallery__thumbnail {
   position: relative;
   width: 60px;
   height: 60px;
@@ -124,7 +166,7 @@ footer {
   transition: transform .3s;
 }
 
-.gallery_thumbnail-img {
+.gallery__thumbnail-img {
   position: absolute;
   inset: 0;
   margin: auto;
@@ -136,7 +178,7 @@ footer {
   width: 260px;
 }
 
-.gallery-cards:hover .gallery_img {
+.gallery-cards:hover .gallery__img {
   transform: scale(1.1);
 }
 
@@ -149,16 +191,16 @@ footer {
 }
 
 /* Active thumbnail */
-.swiper-slide-active .gallery_thumbnail {
+.swiper-slide-active .gallery__thumbnail {
   transform: translateY(-1.25rem) scale(1.2);
 }
 
 /* Rotate thumbnail */
-.swiper-slide-next .gallery_thumbnail {
+.swiper-slide-next .gallery__thumbnail {
   transform: rotate(15deg);
 }
 
-.swiper-slide-prev .gallery_thumbnail {
+.swiper-slide-prev .gallery__thumbnail {
   transform: rotate(-15deg);
 }
 
@@ -180,17 +222,19 @@ footer {
 .swiper-button-next,
 .swiper-button-prev {
   font-size: 1.5rem;
-  color: var(--text-color-black);
+  color: #bf5065;
   top: 5.5rem;
 }
 
 .swiper-button-next {
   right: -1.5rem;
+  color: #bf5065;
   transform: rotate(15deg);
 }
 
 .swiper-button-prev {
   left: -1.5rem;
+  color: #bf5065;
   transform: rotate(-15deg);
 }
 
@@ -218,18 +262,47 @@ footer {
   }
 }
 
+
+
 /* For medium devices */
-@media screen and (min-width: 1024px) {
-  .gallery_card {
-    width: 220px;
+@media screen and (max-width: 1024px) {
+  .gallery__card {
+    width: 290px;
     height: 290px;
   }
-  .gallery_thumbnail {
+  .gallery__thumbnail {
     width: 65px;
     height: 65px;
   }
   .gallery-cards,
   .gallery-thumbs {
     width: 280px;
+  }
+    
+  .footer {
+    position: relative;
+  }
+    
+  .nav {
+    position: relative;
+    font-size: 10px;
+    padding: 32px 16px;
+  }
+    
+  a {
+  text-decoration: none;
+  color: #bf5065;
+  font-size: 10px;
+    }
+    
+  .logo {
+    width: 50px;
+    height: 50px;
+    margin-top: -10px;
+  }
+    
+  .text{
+    font-size: 32px;
+    padding: 32px 16px;
   }
 }
