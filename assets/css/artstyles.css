@@ -59,63 +59,6 @@ title{
 }
 
 
-canvas#confetti {
-  position: fixed;
-  width: 100%;
-  height: 100%;
-  top: 0px;
-  left: 0px;
-  z-index: 1000;
-  pointer-events: none;
-}
-
-.button-53 {
-  background-color: #734954;
-  border: 0 solid #e5e7eb;
-  box-sizing: border-box;
-  color: white;
-  display: flex;
-  font-family: ui-sans-serif, system-ui, -apple-system, system-ui, "Segoe UI",
-    Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif,
-    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  font-size: 1rem;
-  font-weight: 600;
-  justify-content: center;
-  line-height: 1.75rem;
-  padding: 0.75rem 1.65rem;
-  position: relative;
-  text-align: center;
-  font-size: 16px;
-  text-decoration: none #000000 solid;
-  text-decoration-thickness: auto;
-  width: 100%;
-  max-width: 460px;
-  position: relative;
-  cursor: pointer;
-  user-select: none;
-  -webkit-user-select: none;
-  touch-action: manipulation;
-}
-
-.button-53:focus {
-  outline: 0;
-}
-
-.button-53:after {
-  content: "";
-  position: absolute;
-  border: 1px solid #000000;
-  bottom: 4px;
-  left: 4px;
-  width: calc(100% - 1px);
-  height: calc(100% - 1px);
-}
-
-.button-53:hover:after {
-  bottom: 2px;
-  left: 2px;
-}
-
 span {
   font-family: 'Pacifico';  
   margin-top: 30px;
@@ -149,11 +92,6 @@ a{
   color: #734954;
 }
 
-p {
-  color:black;
-  
-}
-
 a:hover {
   color: #734954;
 }
@@ -170,8 +108,9 @@ li {
 .footer{
   display: flex;
   justify-content: center;
+  position: relative;
   font-family: 'Pacifico';
-  padding: 30px 0px;
+  padding: 38px 10px;
   width: 100%;
   color: #734954;
   font-size: 30px;
@@ -192,7 +131,7 @@ img {
 
 /*=============== GALLERY ===============*/
 .gallery {
-  height: 75vh;
+  height: 70vh;
   display: grid;
   align-content: center;
   justify-content: center;
@@ -427,10 +366,5 @@ img {
     font-size: 32px;
     padding: 32px 16px;
     margin-top: 10px;
-  }
-    
-  .button-53 {
-    padding: 0.75rem 3rem;
-    font-size: 1\.25rem;
   }
 }
