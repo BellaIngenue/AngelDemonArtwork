@@ -41,21 +41,26 @@
     margin-top: -10px;
     display: flex;
     justify-content: center;
+    border: 2px solid #734954;
+    box-sizing: border-box;
+    border-radius: 200px;
+    object-fit: cover;
 }
 
 .nav {
   display: flex;
   justify-content: center;
-  padding: 0px 0;
+  padding: 32px 20px;
   font-family: 'Pacifico';
-  font-size: 25px;
-  border-bottom: 8px solid #bf5065;
+  font-size: 45px;
+  border-bottom: 8px solid #734954;
+  background-color: #D9C2AD;
 }
 
 a{
   display: relative;
   text-decoration: none;
-  color: #bf5065;
+  color: #734954;
 }
 
 a:hover {
@@ -74,9 +79,12 @@ li {
 .footer{
   display: flex;
   justify-content: center;
-  padding: 30px 0;
+  font-family: 'Pacifico';
+  padding: 20px 0px;
   width: 100%;
   color: #734954;
+  border-top: 8px solid #734954;
+  background-color: #D9C2AD;
 }
 
 body {
@@ -91,7 +99,7 @@ img {
 
 /*=============== GALLERY ===============*/
 .gallery {
-  height: 100vh;
+  height: 75vh;
   display: grid;
   align-content: center;
   justify-content: center;
@@ -99,8 +107,8 @@ img {
 
 .gallery__card {
   position: relative;
-  width: 268px;
-  height: 268px;
+  width: 300px;
+  height: 300px;
   border-radius: 3rem;
   margin-left: auto;
   margin-right: auto;
@@ -175,7 +183,7 @@ img {
 /* Swiper class */
 .gallery-cards,
 .gallery-thumbs {
-  width: 260px;
+  width: 536px;
 }
 
 .gallery-cards:hover .gallery__img {
@@ -187,7 +195,7 @@ img {
 }
 
 .gallery-thumbs {
-  height: 132px;
+  height: 150px;
 }
 
 /* Active thumbnail */
@@ -221,19 +229,21 @@ img {
 
 .swiper-button-next,
 .swiper-button-prev {
-  font-size: 1.5rem;
+  font-size: 2.5rem;
   color: #bf5065;
   top: 5.5rem;
 }
 
 .swiper-button-next {
   right: -1.5rem;
+  font-size: 0rem;
   color: #bf5065;
   transform: rotate(15deg);
 }
 
 .swiper-button-prev {
   left: -1.5rem;
+  font-size: 0rem;
   color: #bf5065;
   transform: rotate(-15deg);
 }
@@ -267,8 +277,8 @@ img {
 /* For medium devices */
 @media screen and (max-width: 1024px) {
   .gallery__card {
-    width: 290px;
-    height: 290px;
+    width: 280px;
+    height: 280px;
   }
   .gallery__thumbnail {
     width: 65px;
@@ -285,24 +295,31 @@ img {
     
   .nav {
     position: relative;
-    font-size: 10px;
-    padding: 32px 16px;
+    padding: 12px 20px;
   }
     
   a {
-  text-decoration: none;
-  color: #bf5065;
-  font-size: 10px;
-    }
+    display: relative;
+    text-decoration: none;
+    color: #734954;
+    font-size: 15px;
+  }
     
   .logo {
     width: 50px;
     height: 50px;
-    margin-top: -10px;
+    margin-top: 20px;
+    display: flex;
+    object-fit: cover;
+    justify-content: center;
+    border: 2px solid #734954;
+    box-sizing: border-box;
+    border-radius: 20px;
   }
     
   .text{
     font-size: 32px;
     padding: 32px 16px;
+    margin-top: 10px;
   }
 }
