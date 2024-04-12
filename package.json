@@ -1,0 +1,7 @@
+{
+  "type": "module"
+  "jshintConfig": {
+    "esversion": 6
+  }
+
+}
