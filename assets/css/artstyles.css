@@ -39,17 +39,6 @@ title{
    display: none;
 }
 
-.main-img {
-    width: 150px;
-    margin: 20px;
-    display: flex;
-    justify-content: center;
-    border: 2px solid #734954;
-    box-sizing: border-box;
-    border-radius: 200px;
-    object-fit: cover
-}
-
 .main {
   background-color: #f2dfce;
   display: flex;
@@ -86,6 +75,12 @@ span {
   background-color: #D9C2AD;
 }
 
+.nav .home{
+  font-family: 'Pacifico';
+  font-size: 45px;
+    
+}
+
 a{
   display: relative;
   text-decoration: none;
@@ -93,7 +88,10 @@ a{
 }
 
 a:hover {
-  color: #734954;
+  text-decoration: none;
+  color: #40282e!important;
+  width: 100%;
+  padding: 0px 0px;
 }
 
 ul{
