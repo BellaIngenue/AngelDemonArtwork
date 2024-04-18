@@ -33,19 +33,19 @@
   margin: 0;
 }
 
-center .nav{
-  text-decoration: none;
-  justify-content: center !important;
-  align-content: center !important;
-  background-color: #d9c2ad;
-}
+  center{
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+  }
 
 .nav {
   text-decoration: none;
   justify-content: center !important;
   align-content: center !important;
   width: 100%;
-  padding: 0px 10px;
+  padding: 0px 0px;
   font-family: "Pacifico";
   font-size: 45px;
   border-bottom: 8px solid #734954;
@@ -113,10 +113,11 @@ a:hover {
 
 #confetti {
   position: fixed;
-  width: 100%;
   height: 100%;
+  width: 100%;
+  
   left: 0px;
-  top: -200px;
+  top: 75px;
   z-index: 1000;
   pointer-events: none;
 }
@@ -133,8 +134,8 @@ a:hover {
   background-color: #f2dfce;
   display: flex;
   justify-content: center;
-  padding: 15px 15px;
   text-decoration: none;
+  padding: 25px 15px;
 }
 
 .fa {
@@ -240,10 +241,15 @@ body {
 /* For medium devices */
 @media screen and (max-width: 1024px) {
     
-  
+
+  center{
+    width: 100%;
+    height: 100%;
+    }
+    
   .nav {
     position: relative;
-    padding: 3px 30px;
+    padding: 3px 20px;
     width: 100%;
   }
     
@@ -253,12 +259,24 @@ body {
   font-family: "Pacifico";
   padding: 30px 10px;
   width: 100%;
+  height: 100%;
   color: #734954 !important;
   font-size: 20px;
   border-top: 8px solid #734954;
   background-color: #d9c2ad;
   align-content: center !important;
 }
+    
+    
+    #confetti {
+      position: fixed;
+      height: 100%;
+      width: 100%;
+      left: 0px;
+      top: 25px;
+      z-index: 1000;
+      pointer-events: none;
+    }
 
   a {
     text-decoration: none;
@@ -315,6 +333,9 @@ body {
     border: 2px solid #734954;
     border-radius: 20px;
   }
+    .main {
+     padding: 60px 15px;
+    }
 
 .footer p {
   font-family: "Pacifico";
