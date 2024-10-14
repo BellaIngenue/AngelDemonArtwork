@@ -33,6 +33,13 @@
     margin: 0;
 }
 
+body {
+    background-image: url(assets/images/background.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+
 .main {
     display: flex;
     justify-content: center !important;
@@ -45,6 +52,7 @@
     margin: auto;
     background-color: #d9c2ad;
     padding: 25px 15px;
+
 }
 
 .column .img {
@@ -169,15 +177,16 @@ a:hover {
     text-decoration: none;
 }
 
-
 ul {
     display: flex;
-    text-decoration: none;
-    justify-content: center;
-
+    justify-content: center !important;
+    align-content: center !important;
 }
 
 li {
+    display: flex;
+    justify-content: center !important;
+    align-content: center !important;
     text-decoration: none;
     list-style-type: none;
     padding: 30px;
@@ -196,12 +205,6 @@ span {
     margin-top: 30px;
     font-size: 35px;
     color: #906D51;
-}
-
-
-body {
-    font-weight: 100;
-    background-color: #d9c2ad;
 }
 
 .but {
@@ -270,7 +273,7 @@ body {
     }
 
     .footer {
-        display: relative;
+        display: flex;
         justify-content: center !important;
         font-family: "Itim";
         padding: 30px 10px;
