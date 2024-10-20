@@ -8,7 +8,6 @@
     --first-color: #a57f60;
     --text-color: #fff;
     --text-color-black: hsl(30, 8%, 15%);
-    --body-color: #d9c2ad;
     --swiper-navigation-color: #bf5065;
 
     /*========== Font and typography ==========*/
@@ -34,7 +33,8 @@
 }
 
 body {
-    background-image: url(assets/images/background.png);
+    background-image: url("/assets/images/background.png");
+    background-attachment: fixed;
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
@@ -48,42 +48,69 @@ body {
     height: 100%;
     max-height: 800px;
     max-width: 1000px;
-    padding: 0;
+    padding: 0px;
     margin: auto;
     background-color: #d9c2ad;
     padding: 25px 15px;
 
 }
 
-.column .img {
-    width: 33.33%;
-}
-
 .nav {
     text-decoration: none;
+    text-align: center;
     justify-content: center !important;
     align-content: center !important;
     width: 100%;
-    display: block;
-    padding: 0px 0px;
+    display: inline-block;
+    vertical-align: middle;
+    padding: 10px 85px 0px 40px;
     font-family: "Itim";
-    font-size: 45px;
+    font-size: 50px;
     border-bottom: 8px solid #a57f60;
     background-color: #d9c2ad;
 }
 
-.nav ul {
+.nav-table {
+    width: 100%;
+    display: table;
+    justify-content: center;
+    align-content: center !important;
+    text-align: center;
+}
+
+ul {
+    list-style-type: none;
+    overflow: hidden;
     justify-content: center !important;
     align-content: center !important;
     width: 100%;
+    display: inline-block;
+    text-align: center;
+    vertical-align: middle;
 }
 
-.nav .logo {
+li {
+] display: inline-block;
+    justify-content: center;
+    align-content: center !important;
+    text-align: center;
+    position: relative;
+}
+
+li a {
+    width: 100%;
+    display: inline-block;
+    vertical-align: middle;
+    text-align: center;
+    text-decoration: none;
+}
+
+.nav ul .logo {
     width: 100px;
     margin-top: -10px;
-    justify-content: center;
+    justify-content: normal;
     border: 2px solid #906d51;
-    box-sizing: border-box;
+    text-align: center;
     border-radius: 200px;
 }
 
